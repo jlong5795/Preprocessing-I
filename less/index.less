@@ -63,18 +63,42 @@ html, body {
 	height: 100%;
 }
 
+h1 {
+	font-size:3.2rem;
+}
+
+h2 {
+	font-size:2rem;
+}
+
+h3 {
+	font-size:1.5rem;
+}
+
+.container {
+	width:80%;
+	margin:auto;
+}
+
+/*Transition Formatting*/
+.transition-formatting() {
+	border:@main-gray 1px solid;
+	padding:1% 0;
+	background-color:@main-gray;
+	width:100%;
+}
+
 /*Nav*/
 
 
 .navigation-container {
 	display:flex;
+	.transition-formatting();
 
 	.navigation {
 		display:flex;
-		border:@main-gray 1px solid;
-		padding:1% 0;
-		background-color:@main-gray;
-		width:100%;
+		
+		
 		justify-content: flex-end;
 		
 		a{
@@ -87,27 +111,91 @@ html, body {
 
 .top-content {
 	display:flex;
+	padding:3%;
 	
-	div {
+	.my-info, .photo-container {
 		width:45%;
+	}
+
+	.tag-line {
+		padding:1.5% 0 10% 0;
+		font-style:italic;
 	}
 
 	.my-info {
 		margin: auto;
 		
-
-		h1 {
-			font-size:3.2rem;
+		.about-me {
+			border:1px solid black;
 		}
+	
+	}
 
-		h2 {
-			font-size:2rem;
-		}
-
-		p {
-			padding:1.5% 0;
-		}
-
-
+	.photo-container p {
+		font-size:.7rem;
 	}
 }	
+
+hr {
+	.transition-formatting();
+}
+
+.pers-summary {
+	display:flex;
+	justify-content: space-evenly;
+
+	h3 {
+		text-align: center;
+		text-decoration:underline;
+	}
+
+	.about-me, .tech-skills {
+		width:40%;
+		padding:5% 2%;
+		
+		p {
+			width: 100%;;
+			margin:auto;
+			padding:2%;
+		}
+
+		ul{
+			list-style-type: circle;
+		
+			li {
+				line-height:2rem;
+			}
+		}
+		
+	}
+
+	
+}
+
+
+
+.work-history {
+	
+	padding-bottom:5rem;
+
+	h2 {
+		.transition-formatting();
+	}
+}
+
+tr {
+	line-height:2rem;
+}
+
+.table-header {
+	border-bottom:1px black solid;
+}
+
+th, td {
+	width:20%;
+}
+
+footer {
+	.transition-formatting();
+	text-align:center;
+}

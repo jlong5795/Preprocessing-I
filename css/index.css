@@ -136,16 +136,30 @@ html,
 body {
   height: 100%;
 }
+h1 {
+  font-size: 3.2rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+/*Transition Formatting*/
 /*Nav*/
 .navigation-container {
-  display: flex;
-}
-.navigation-container .navigation {
   display: flex;
   border: #73726f 1px solid;
   padding: 1% 0;
   background-color: #73726f;
   width: 100%;
+}
+.navigation-container .navigation {
+  display: flex;
   justify-content: flex-end;
 }
 .navigation-container .navigation a {
@@ -155,19 +169,81 @@ body {
 }
 .top-content {
   display: flex;
+  padding: 3%;
 }
-.top-content div {
+.top-content .my-info,
+.top-content .photo-container {
   width: 45%;
+}
+.top-content .tag-line {
+  padding: 1.5% 0 10% 0;
+  font-style: italic;
 }
 .top-content .my-info {
   margin: auto;
 }
-.top-content .my-info h1 {
-  font-size: 3.2rem;
+.top-content .my-info .about-me {
+  border: 1px solid black;
 }
-.top-content .my-info h2 {
-  font-size: 2rem;
+.top-content .photo-container p {
+  font-size: 0.7rem;
 }
-.top-content .my-info p {
-  padding: 1.5% 0;
+hr {
+  border: #73726f 1px solid;
+  padding: 1% 0;
+  background-color: #73726f;
+  width: 100%;
+}
+.pers-summary {
+  display: flex;
+  justify-content: space-evenly;
+}
+.pers-summary h3 {
+  text-align: center;
+  text-decoration: underline;
+}
+.pers-summary .about-me,
+.pers-summary .tech-skills {
+  width: 40%;
+  padding: 5% 2%;
+}
+.pers-summary .about-me p,
+.pers-summary .tech-skills p {
+  width: 100%;
+  margin: auto;
+  padding: 2%;
+}
+.pers-summary .about-me ul,
+.pers-summary .tech-skills ul {
+  list-style-type: circle;
+}
+.pers-summary .about-me ul li,
+.pers-summary .tech-skills ul li {
+  line-height: 2rem;
+}
+.work-history {
+  padding-bottom: 5rem;
+}
+.work-history h2 {
+  border: #73726f 1px solid;
+  padding: 1% 0;
+  background-color: #73726f;
+  width: 100%;
+}
+tr {
+  line-height: 2rem;
+}
+.table-header {
+  border-bottom: 1px black solid;
+}
+th,
+td {
+  width: 20%;
+}
+footer {
+  border: #73726f 1px solid;
+  padding: 1% 0;
+  background-color: #73726f;
+  width: 100%;
+  text-align: center;
 }
