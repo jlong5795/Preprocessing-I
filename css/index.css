@@ -146,9 +146,15 @@ h2 {
 h3 {
   font-size: 1.5rem;
 }
+body {
+  background-color: black;
+  font-family: 'Oswald', sans-serif;
+}
 .container {
   width: 80%;
   margin: auto;
+  background-color: white;
+  color: #1a1a1a;
 }
 a {
   text-decoration: none;
@@ -189,6 +195,16 @@ a {
 .top-content .photo-container p {
   font-size: 0.7rem;
 }
+@media (max-width: 500px) {
+  .top-content .my-info {
+    width: 100%;
+    text-align: center;
+    padding-top: 3%;
+  }
+  .top-content .photo-container {
+    display: none;
+  }
+}
 hr {
   border: #73726f 1px solid;
   padding: 1% 0;
@@ -221,6 +237,23 @@ hr {
 .pers-summary .about-me ul li,
 .pers-summary .tech-skills ul li {
   line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .pers-summary {
+    flex-direction: column;
+  }
+  .pers-summary h3 {
+    padding-bottom: 1rem;
+  }
+  .pers-summary .about-me,
+  .pers-summary .tech-skills {
+    width: 100%;
+  }
+  .pers-summary ul {
+    widows: 90%;
+    margin: auto;
+    text-align: center;
+  }
 }
 .work-history {
   padding-bottom: 5rem;
@@ -260,6 +293,9 @@ footer {
   padding: 2%;
   text-align: center;
 }
+.contact .contact-header h2 {
+  text-decoration: underline;
+}
 .contact .contact-header p {
   padding: 2%;
   width: 70%;
@@ -267,6 +303,19 @@ footer {
 }
 .contact .contact-info {
   line-height: 2rem;
+}
+@media (max-width: 500px) {
+  .contact {
+    flex-direction: column;
+  }
+  .contact h2 {
+    padding-bottom: 1rem;
+  }
+  .contact .contact-header,
+  .contact .contact-info {
+    padding: 5%;
+    text-align: center;
+  }
 }
 .social {
   display: flex;

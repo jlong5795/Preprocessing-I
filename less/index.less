@@ -4,6 +4,8 @@
    License: none (public domain)
 */
 
+
+
 /*Variables*/
 @main-gray: #73726f;
 @main-black: #1a1a1a;
@@ -76,9 +78,18 @@ h3 {
 	font-size:1.5rem;
 }
 
+body {
+	background-color:black;
+	font-family: 'Oswald', sans-serif;
+}
+
+
+
 .container {
 	width:80%;
 	margin:auto;
+	background-color:white;
+	color:@main-black;
 }
 
 a{
@@ -118,6 +129,8 @@ a{
 .top-content {
 	display:flex;
 	padding:3%;
+
+	
 	
 	.my-info, .photo-container {
 		width:45%;
@@ -137,9 +150,25 @@ a{
 	
 	}
 
-	.photo-container p {
-		font-size:.7rem;
+	.photo-container {
+		
+				p {
+			font-size:.7rem;
+		}
 	}
+	
+	@media (max-width: 500px){
+		.my-info {
+			width:100%;
+			text-align:center;
+			padding-top:3%;
+		}
+		
+		.photo-container {
+			display:none;
+		}
+	}
+	
 }	
 
 hr {
@@ -174,6 +203,23 @@ hr {
 		
 	}
 
+	@media (max-width: 500px) {
+		flex-direction:column;
+
+		h3 {
+			padding-bottom:1rem;
+		}
+		
+		.about-me, .tech-skills {
+			width:100%;
+		}
+
+		ul {
+			widows: 90%;
+			margin:auto;
+			text-align:center;
+		}
+	}
 	
 }
 
@@ -217,6 +263,10 @@ footer {
 		padding:2%;
 		text-align: center;
 
+		h2 {
+			text-decoration:underline;
+		}
+
 		p{
 		padding:2%;
 		width:70%;
@@ -226,6 +276,19 @@ footer {
 
 	.contact-info {
 		line-height:2rem;
+	}
+
+	@media (max-width: 500px) {
+		flex-direction:column;
+
+		h2 {
+			padding-bottom:1rem;
+		}
+
+		.contact-header, .contact-info {
+			padding:5%;
+			text-align: center;
+		}
 	}
 }
 
@@ -242,3 +305,4 @@ footer {
 		
 	}
 }
+
