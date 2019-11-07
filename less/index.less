@@ -59,6 +59,7 @@ table {
 	width:100%;
 }
 
+/*Global Rules*/
 html, body {
 	height: 100%;
 }
@@ -80,7 +81,12 @@ h3 {
 	margin:auto;
 }
 
-/*Transition Formatting*/
+a{
+	.link-default();
+	width:10%;
+}
+
+/*Add-Ins*/
 .transition-formatting() {
 	border:@main-gray 1px solid;
 	padding:1% 0;
@@ -88,24 +94,24 @@ h3 {
 	width:100%;
 }
 
-/*Nav*/
+.flex-default() {
+	display:flex;
+	justify-content: space-evenly;
+}
 
+.link-default() {
+	text-decoration:none;
+	color:@main-black;
+}
+
+/*Nav*/
 
 .navigation-container {
 	display:flex;
 	.transition-formatting();
 
 	.navigation {
-		display:flex;
-		
-		
-		justify-content: flex-end;
-		
-		a{
-			text-decoration:none;
-			color:@main-black;
-			width:10%;
-		}
+		.flex-default();
 	}
 }
 
@@ -141,8 +147,7 @@ hr {
 }
 
 .pers-summary {
-	display:flex;
-	justify-content: space-evenly;
+	.flex-default();
 
 	h3 {
 		text-align: center;
@@ -193,9 +198,47 @@ tr {
 
 th, td {
 	width:20%;
+	text-align: center;
 }
 
 footer {
 	.transition-formatting();
 	text-align:center;
+}
+
+/*Contact Page*/
+.contact {
+	.flex-default();
+	padding:5%;
+
+	.contact-header {
+			
+		margin:auto;
+		padding:2%;
+		text-align: center;
+
+		p{
+		padding:2%;
+		width:70%;
+		margin:auto;
+		}
+	}
+
+	.contact-info {
+		line-height:2rem;
+	}
+}
+
+.social {
+	.flex-default();
+	padding-bottom:5%;
+
+	div {
+		width: 20%;
+
+		.fab {
+			width:15%;
+		}
+		
+	}
 }

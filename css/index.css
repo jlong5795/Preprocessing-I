@@ -132,6 +132,7 @@ table {
   box-sizing: border-box;
   width: 100%;
 }
+/*Global Rules*/
 html,
 body {
   height: 100%;
@@ -149,7 +150,12 @@ h3 {
   width: 80%;
   margin: auto;
 }
-/*Transition Formatting*/
+a {
+  text-decoration: none;
+  color: #1a1a1a;
+  width: 10%;
+}
+/*Add-Ins*/
 /*Nav*/
 .navigation-container {
   display: flex;
@@ -160,12 +166,7 @@ h3 {
 }
 .navigation-container .navigation {
   display: flex;
-  justify-content: flex-end;
-}
-.navigation-container .navigation a {
-  text-decoration: none;
-  color: #1a1a1a;
-  width: 10%;
+  justify-content: space-evenly;
 }
 .top-content {
   display: flex;
@@ -239,6 +240,7 @@ tr {
 th,
 td {
   width: 20%;
+  text-align: center;
 }
 footer {
   border: #73726f 1px solid;
@@ -246,4 +248,34 @@ footer {
   background-color: #73726f;
   width: 100%;
   text-align: center;
+}
+/*Contact Page*/
+.contact {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 5%;
+}
+.contact .contact-header {
+  margin: auto;
+  padding: 2%;
+  text-align: center;
+}
+.contact .contact-header p {
+  padding: 2%;
+  width: 70%;
+  margin: auto;
+}
+.contact .contact-info {
+  line-height: 2rem;
+}
+.social {
+  display: flex;
+  justify-content: space-evenly;
+  padding-bottom: 5%;
+}
+.social div {
+  width: 20%;
+}
+.social div .fab {
+  width: 15%;
 }
